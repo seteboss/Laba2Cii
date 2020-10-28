@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="640.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.PrimaryController">
+  <children>
+    <MenuBar stylesheets="@../../css/text.css" VBox.vgrow="NEVER" />
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="602.0" prefWidth="946.0" style="-fx-border-color: #000000;" VBox.vgrow="ALWAYS">
+      <children>
+            <GridPane fx:id="signsVectorsId" layoutX="259.0" layoutY="51.0" prefHeight="255.0" prefWidth="672.0" style="-fx-border-color: #000000;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="254.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="254.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="prototypeVectorsId" layoutX="259.0" layoutY="344.0" prefHeight="255.0" prefWidth="672.0" style="-fx-border-color: #000000;" stylesheets="@../../css/text.css">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Text layoutX="462.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Обозначения признаков" textAlignment="CENTER" wrappingWidth="266.13671875">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="409.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Полученные кластеры векторов" textAlignment="CENTER" wrappingWidth="371.7366943359375">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="68.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Параметры" textAlignment="CENTER" wrappingWidth="91.81170654296875">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="90.60002136230469" endY="455.4000244140625" layoutX="144.0" layoutY="139.0" startX="90.60002136230469" startY="-87.79999542236328" />
+            <Text layoutX="5.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NN: Число производственных участков" textAlignment="CENTER" wrappingWidth="216.61166381835938">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="NNId" layoutX="60.0" layoutY="130.0" prefHeight="26.0" prefWidth="106.0" text="10" />
+            <Text layoutX="5.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d: Размер вектора признаков" textAlignment="CENTER" wrappingWidth="216.61166381835938">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="dId" layoutX="60.0" layoutY="196.0" prefHeight="26.0" prefWidth="106.0" text="11" />
+            <Text layoutX="5.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="p: Параметр внимательности" textAlignment="CENTER" wrappingWidth="216.61166381835938">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="pId" layoutX="60.0" layoutY="262.0" prefHeight="26.0" prefWidth="106.0" text="0.9" />
+            <Text layoutX="5.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b : Бета-параметр" textAlignment="CENTER" wrappingWidth="216.61166381835938">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="bId" layoutX="60.0" layoutY="344.0" prefHeight="26.0" prefWidth="106.0" text="1" />
+            <Button fx:id="buttonId" layoutX="67.0" layoutY="466.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="92.0" text="Выполнить" />
+            <Text layoutX="5.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус" textAlignment="CENTER" wrappingWidth="216.61166381835938">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="statusId" layoutX="5.0" layoutY="558.0" prefHeight="32.0" prefWidth="218.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

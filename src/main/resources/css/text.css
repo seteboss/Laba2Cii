@@ -1,0 +1,40 @@
+.text-field {
+  -fx-font-family: cursive;
+  -fx-border-style: solid;
+  -fx-border-color: #F3CA20;
+  -fx-background-color : #000000;
+  -fx-text-fill: #F3CA20;
+}
+
+.button{
+  -fx-border-style: solid;
+  -fx-background-color: #F3CA20;
+}
+
+.tab-pane{
+  -fx-background-color:#000000;
+  -fx-text-fill: #F3CA20;
+}
+
+.menu-bar{
+  -fx-background-color: #F3CA20;
+}
+.axis{
+  -fx-text-fill: #F3CA20;
+}
+.chart-plot-background{
+  -fx-background-color : #000000;
+}
+.tab-header-background {
+  -fx-background-color: #F3CA20;
+}
+.tab{
+  -fx-background-color: #F3CA20;
+}
+
+.grid-pane {
+  -fx-background-color:  #F3CA20;
+  -fx-stroke: #F3CA20;
+}
+
+
